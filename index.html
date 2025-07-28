@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfaz Habesha Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+  background: linear-gradient(to right, #3e2723, #5d4037);
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  color: #f5d7b9;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+nav a:hover {
+  color: #f5d7b9;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #f5d7b9;
+  width: 0;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e1f1f;
+    }
+    footer {
+      background: #2e1f1f;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo img {
+      height: 50px;
+    }
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .Gallery-images img {
+      width: 100%;
+      max-width: 300px;
+      margin: 1rem;
+      border-radius: 10px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .whatsapp-link,
+    .phone-link,
+    .calendar-link {
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .whatsapp-link a,
+    .phone-link a,
+    .calendar-link a {
+      background-color: #25d366;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .phone-link a {
+      background-color: #007bff;
+    }
+    .phone-link a:hover {
+      background-color: #0056b3;
+    }
+    .calendar-link a {
+      background-color: #6c63ff;
+    }
+    .calendar-link a:hover {
+      background-color: #4c47d9;
+    }
+    .whatsapp-link a:hover {
+      background-color: #1ebe5d;
+    }
+    .shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.shop-item {
+  background-color: #fdf3e7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.shop-item:hover {
+  transform: translateY(-5px);
+}
+
+.shop-icon {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+/* Mobile Responsive Header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+  }
+
+  nav a:hover::after {
+    display: none;
+  }
+}
+
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" />
+      <div class="logo-text">Alfaz Habesha Design</div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#Gallery">Gallery</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact us">Contact us</a>
+    </nav>
+  </header>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Alfaz Habesha Design is a premium Ethiopian fashion brand blending traditional roots with modern creativity. Our mission is to highlight cultural pride through elegant and bold fashion statements.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Custom Traditional Wear Design</li>
+      <li>Bridal & Groom Outfits</li>
+      <li>Fashion Consultation</li>
+      <li>Photoshoot Styling</li>
+      <li>Booking for Events and Shows</li>
+    </ul>
+  </section>
+
+  <section class="section" id="Gallery">
+    <h2>Gallery</h2>
+    <div class="Gallery-images">
+      <img src="images/hab1.jpg" alt="Design 1" />
+      <img src="images/hab2.jpg" alt="Design 2" />
+      <img src="images/hab3.jpg" alt="Design 3" />
+      <img src="images/hab3.jpg" alt="Design 3" />
+    </div>
+  </section>
+
+  <section class="section" id="shop"> 
+  <h2>Shop by Category</h2>
+  <div class="shop-grid">
+    <div class="shop-item">
+      <img src="images/women.jpg" alt="Women Dress" class="shop-icon" />
+      <h3>Women</h3>
+      <p>Elegant traditional and modern fusion styles for all occasions.</p>
+    </div>
+    <div class="shop-item">
+      <img src="images/men.jpg" alt="Men Shirt" class="shop-icon" />
+      <h3>Men</h3>
+      <p>Classic and contemporary Habesha outfits tailored to perfection.</p>
+    </div>
+    <div class="shop-item">
+      <img src="images/kids.jpg" alt="Kids Wear" class="shop-icon" />
+      <h3>Kids</h3>
+      <p>Adorable and vibrant traditional designs for the little ones.</p>
+    </div>
+    <div class="shop-item">
+      <img src="images/weeding.jpg" alt="Wedding Dress" class="shop-icon" />
+      <h3>Wedding</h3>
+      <p>Exquisite bridal and groom collections for your special day.</p>
+    </div>
+    <div class="shop-item">
+      <img src="images/men.jpg" alt="Accessories" class="shop-icon" />
+      <h3>Accessories</h3>
+      <p>Scarves, jewelry, and finishing touches to elevate your look.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section class="section" id="contact us">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="whatsapp-link">
+      <a href="https://wa.me/251919340644" target="_blank">Chat with us on WhatsApp</a>
+    </div>
+    <div class="phone-link">
+      <a href="tel:+251919834464">Call Us: +251 919 340 644</a>
+    </div>
+    <div class="calendar-link">
+      <a href="https://calendar.google.com/calendar/u/0/r" target="_blank">Book an Appointment</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alfaz Habesha Design. All rights reserved.</p>
+  </footer>
+</body>
+</html>
