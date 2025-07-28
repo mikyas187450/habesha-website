@@ -26,6 +26,43 @@
   top: 0;
   z-index: 1000;
 }
+    nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #3e2723;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
     .menu-toggle {
   display: none;
   background: none;
@@ -240,22 +277,19 @@ nav a:hover::after {
 }
 
   </style>
-</head>
-<body>
-  <header>
-  <div class="logo">Alfaz Habesha Design</div>
-  <button class="menu-toggle" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </button>
+<header>
+  <h1>Alfaz Habesha Design</h1>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   <nav id="navMenu">
     <a href="#home">Home</a>
-    <a href="#about">About Us</a>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
     <a href="#shop">Shop</a>
   </nav>
 </header>
+
 
 
   <section class="section" id="about">
@@ -340,11 +374,13 @@ nav a:hover::after {
   <footer>
     <p>&copy; 2025 Alfaz Habesha Design. All rights reserved.</p>
   </footer>
+  
   <script>
-    function toggleMenu() {
-      const nav = document.getElementById("navMenu");
-      nav.classList.toggle("active");
-    }
-  </script>
+  function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("active");
+  }
+</script>
+
 </body>
 </html>
